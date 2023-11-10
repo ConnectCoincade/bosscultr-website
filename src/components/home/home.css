@@ -1,0 +1,41 @@
+.skippdiv {
+    z-index: 9999;
+    position: absolute;
+    right: 0;
+    bottom: 6%;
+  }
+  .skippdiv button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    transform: translate(-100%, -50%);
+    /* padding: 12px 48px; */
+    color: #fff;
+    background: linear-gradient(to right, #4d4d4d 0, #fff 10%, #4d4d4d 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: Agency FB;
+  }
+  .lore-heading{
+    font-family: Agency B;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-right: 100px;
+    color: #f74f58;
+    margin-left:100px ;
+  
+  }
+  @media screen and (min-width: 360px) and (max-width: 415px) {
+    .faq-top-margin {
+      margin: 55vh auto;
+    }
+  }

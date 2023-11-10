@@ -1,0 +1,171 @@
+/* Custom CSS Property */
+@property --shadow-color {
+    syntax: "<color>";
+    initial-value: transparent;
+    inherits: false;
+  }
+  
+  body {
+    background: #000;
+    background-color: #000;
+  }
+  /* Box */
+  .box-container {
+    margin-bottom: 500px;
+    position: absolute;
+    /* top: 220px; */
+    /* left: 100px; */
+    width: 500px;
+    /* height: 250px; */
+    transform-origin: bottom;
+    animation: box 5s ease-in;
+  }
+  #boss-char {
+    z-index: 1;
+    margin-top: 500px;
+  }
+
+  .scroll-boss {
+    margin-bottom:500px;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+  }
+
+  #vid-boss {
+    position: fixed;
+  }
+  
+  .box-top {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: #fcc891;
+    clip-path: path("M 154 63 L 239 94 L 155 127 L 72 94 Z");
+  }
+  
+  .box-left {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: #ac5c05;
+    clip-path: path("M 72 94 L 72 199 L 153 243 L 155 127 Z");
+  }
+  
+  .box-right {
+    width: inherit;
+    height: inherit;
+    background: #fab367;
+    clip-path: path("M 153 243 L 238 200 L 239 94 L 155 127 Z");
+  }
+  
+  /* Shadow */
+  /* .shadow {
+    position: absolute;
+    top: 465px;
+    left: 170px;
+    width: 170px;
+    --shadow-color: #ac5c05;
+    border-bottom: 5px var(--shadow-color) solid;
+    transform-origin: center bottom;
+    animation: shadow 3s ease-out infinite;
+    filter: blur(1px);
+  } */
+  
+  /* Animation */
+  @keyframes box {
+    from {
+      transform: scaleY(0.8);
+    }
+  
+    10% {
+      transform: scaleY(1);
+    }
+  
+    15% {
+      transform: translateY(-250px) scaleX(0.9);
+    }
+  
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes shadow {
+    from {
+      transform: scaleX(100%);
+    }
+  
+    10% {
+      transform: scaleX(100%);
+      --shadow-color: #ac5c05;
+    }
+  
+    20% {
+      transform: scaleX(5%);
+      --shadow-color: #fcc891;
+    }
+  
+    30% {
+      transform: scaleX(10%);
+      --shadow-color: #fab367;
+    }
+  
+    to {
+      transform: scaleX(95%);
+    }
+  }
+  
+  /* Body and Container Settings */
+  /* Center shapes */
+  /* body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  } */
+  
+  /* Set background and border color */
+  .margin-top-hero {
+    margin-top: 500px;
+  }
+  .hero-container {
+    
+    /* min-width: 500px; */
+    height: 120vh;
+    /* border: 5px solid lightgray; */
+    background: #121212;
+    background-color: #000;
+    position: relative;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+    .hero-container {
+      min-width: 100%;
+      height: 100vh;
+    }
+   
+    .box-container {
+      margin-bottom: 50vh;
+    }
+  }
+  @media only screen and (min-width: 577px) and (max-width: 1024px) {
+    .hero-container {
+      min-width: 100%;
+      height: 100vh;
+    }
+    .box-container {
+      margin-bottom:50vh;
+    }
+   
+  }
+  

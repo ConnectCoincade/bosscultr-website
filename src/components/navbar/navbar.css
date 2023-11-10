@@ -1,0 +1,15 @@
+ion-icon {
+    color: white;
+  }
+  .navBar{
+    margin-top:-5px
+  }
+
+  .nav-ul{
+    font-family: Agency B;
+  }
+  @media only screen and (max-width:768px){
+    .nav-ul{
+      background-color: black;
+    }
+  }

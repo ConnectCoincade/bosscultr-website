@@ -1,0 +1,126 @@
+.box{
+    border: 5px solid black;
+    margin: 1000px;
+}
+.container1{
+    display: flex;
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+}
+.line{
+    width: 90%;
+    border: 5px solid red;
+}
+.modal-des-title{
+    font-family: Agency B;
+}
+.para-text{
+    font-family: Agency R;
+}
+.about-heading{
+    font-family: Agency B;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-right: 100px;
+    /* border-bottom: 1px solid #f74f58; */
+    color: #f74f58;
+    margin-left:100px ;
+}
+.box{
+    /* position: relative; */
+    /* width: 56%; */
+    /* margin: 10% auto 0; */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0,.1);
+    /* transition: 1s; */
+}
+.image-front{
+    position: absolute;
+}
+
+
+
+.para{
+    display: inline-block;
+}
+.image-hover-1:hover {
+    box-shadow:1px 10px 30px 5px blue;
+    cursor: pointer;
+}
+.image-hover-2:hover {
+    box-shadow:1px 10px 30px 5px gray;
+    cursor: pointer;
+}
+.image-hover-3:hover {
+    box-shadow:1px 10px 30px 5px red;
+    cursor: pointer;
+}
+
+.image-modal-1{
+    border: 1px solid blue;
+    box-shadow:1px 10px 30px 5px blue;
+
+}
+.image-modal-2{
+    border: 1px solid gray;
+    box-shadow:1px 10px 30px 5px gray;
+
+}
+.image-modal-3{
+    border: 1px solid red;
+    box-shadow:1px 10px 30px 5px red;
+}
+.closeButton{
+    width:50px
+}
+@keyframes cursor{
+    50%{ border-color: transparent;}
+}
+@keyframes typing{
+    from {width: 0;}
+}
+
+@media only screen and (max-width:900px){
+
+    .modal-details{
+        margin: 20px;
+    }
+    .list-boss{
+        display: flex;
+        flex-direction: column;
+    }
+    .closeButton{
+        width: 40px;
+    }
+    .modal-description{
+        padding: 0;
+        width: 690px;
+    }
+}
+@media only screen and (max-width:768px){
+
+    .closeButton{
+        width: 30px;
+    }
+    .image-modal{
+        width: 70%;
+    }
+    .modal-des{
+        width: 600px;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .modal-des-title{
+        font-size: 17px;
+    }
+    .modal-description{
+        margin-top: 20px;
+        padding: 20px;
+        /* width: 621px; */
+        /* align-items: center; */
+    }
+}

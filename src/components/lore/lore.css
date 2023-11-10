@@ -1,0 +1,23 @@
+
+.plx-container {
+  overscroll-behavior: none;
+}
+
+.plx-container {
+  font-family: Arial Black, sans-serif,Agency B;
+  text-align: center;
+  background: #000;
+  height: 100vh;
+}
+
+.lore-heading{
+  font-family: Agency B;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-right: 100px;
+  /* border-bottom: 1px solid #f74f58; */
+  color: #f74f58;
+  margin-left:100px ;
+}
+
