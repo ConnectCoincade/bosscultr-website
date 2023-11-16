@@ -89,9 +89,8 @@ const Home = () => {
       ) : (<>
         <Navbar scrollToSection={scrollToSection} />
 
-       
           <section ref={hero} >
-           <Hero  /> 
+           {/* <Hero  />  */}
           {/* <Hero2 /> */}
           </section>
           <section>
