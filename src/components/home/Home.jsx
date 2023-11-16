@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import Navbar from '../navbar/Navbar';
 import Hero from '../hero/Hero';
-import Hero2 from '../hero/hero2';
+// import Hero2 from '../hero/hero2';
 import Lore from '../lore/lore1';
 import About from '../about/About';
 import Teaser from '../teaser/teaser';
@@ -94,11 +94,11 @@ const Home = () => {
            <Hero  /> 
           {/* <Hero2 /> */}
           </section>
-          <section>
+          {/* <section>
           <div className="lore-section">
             <h2 className="section-heading">Lore</h2>
           </div>
-          </section>
+          </section> */}
           <section ref={lore}>
           <Lore />
           </section>

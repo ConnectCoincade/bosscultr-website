@@ -74,7 +74,7 @@ const Card = ({ setSelect, item, key,open, setOpen, selectedCard,setSelectedCard
 
   const handleCardClick = (selectedCard) => {
     storedItem = selectedCard
-    console.log('selectedCard->',selectedCard);
+    // console.log('selectedCard->',selectedCard);
    
     if(window.innerWidth <= 800 && !open) {
       document.getElementById('faq-section').classList.add("faq-top-margin");
@@ -222,8 +222,8 @@ export default function RoadmapList({ setSelect }) {
   // );
 
   function tableClick() {
-    console.log('open->', open);
-    console.log('table->', storedItem);
+    // console.log('open->', open);
+    // console.log('table->', storedItem);
     let selectedCard = storedItem
 
     if(open) {
