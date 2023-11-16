@@ -104,10 +104,10 @@ const Lore = () => {
     }}
   >
     {/* <img style={{ width: "100%" }} src="src\assets\lore-plx-img\boss.png" alt="foreground" /> */}
-    <picture>
+    {/* <picture> */}
   {/* <source media="(max-width:767px)" srcSet={ } alt="foreground"  /> */}
 <img  style={{ width: "100%" }} src={MobileBosses} alt="foreground"  />
-</picture>
+{/* </picture> */}
   </Plx>
 
 
@@ -141,10 +141,10 @@ const Lore = () => {
     }}
   >
     {/* <img style={{ width: "100%" }} src="src\assets\lore-plx-img\Background.gif" alt="background" /> */}
-    <picture>
+    {/* <picture> */}
   {/* <source media="(max-width:767px)" style={{ width: "100%" }} srcSet={ } alt="background" /> */}
 <img  style={{ width: "100%" }} src={MobileBackground} alt="background"  />
-</picture>
+{/* </picture> */}
   </Plx>
 
 
@@ -182,14 +182,14 @@ const Lore = () => {
       src="src\assets\lore-plx-img\Midground.png"
       alt="Goonies"
     /> */}
-    <picture>
+    {/* <picture> */}
   {/* <source media="(max-width:767px)" srcSet={ } alt="Goonies" /> */}
 <img  style={{
         width: "100vw"
       }}
       src={MobileMidground}
       alt="Goonies"/>
-</picture>
+{/* </picture> */}
   </Plx>
   
   </div>
@@ -208,11 +208,11 @@ const Lore = () => {
             }}
           >
             {/* <img style={{ width: "100%" }} src="src\assets\lore-plx-img\boss.png" alt="foreground" /> */}
-            <picture>
+            {/* <picture> */}
           {/* <source media="(max-width:767px)" srcSet={MobileBosses } alt="foreground"  /> */}
           
         <img  style={{ width: "100%" }} src={bosses} alt="foreground"  />
-        </picture>
+        {/* </picture> */}
           </Plx>
 
 
@@ -246,10 +246,10 @@ const Lore = () => {
             }}
           >
             {/* <img style={{ width: "100%" }} src="src\assets\lore-plx-img\Background.gif" alt="background" /> */}
-            <picture>
+            {/* <picture> */}
           {/* <source media="(max-width:767px)" style={{ width: "100%" }} srcSet={MobileBackground } alt="background" /> */}
         <img  style={{ width: "100%" }} src={BackgroundGif} alt="background"  />
-        </picture>
+        {/* </picture> */}
           </Plx>
 
 
@@ -287,14 +287,14 @@ const Lore = () => {
               src="src\assets\lore-plx-img\Midground.png"
               alt="Goonies"
             /> */}
-            <picture>
+            {/* <picture> */}
           {/* <source media="(max-width:767px)" srcSet={Midground } alt="Goonies" /> */}
         <img  style={{
                 width: "100vw"
               }}
               src={Midground}
               alt="Goonies"/>
-        </picture>
+        {/* </picture> */}
           </Plx>
               
           
