@@ -280,13 +280,7 @@ const Lore = () => {
               width: "100%"
             }}
           >
-            {/* <img
-              style={{
-                width: "100vw"
-              }}
-              src="src\assets\lore-plx-img\Midground.png"
-              alt="Goonies"
-            /> */}
+           
             {/* <picture> */}
           {/* <source media="(max-width:767px)" srcSet={Midground } alt="Goonies" /> */}
         <img  style={{
