@@ -93,6 +93,7 @@ const Home = () => {
            <Hero  /> 
           {/* <Hero2 /> */}
           </section>
+          {/* This is a comment */}
           {/* <section>
           <div className="lore-section">
             <h2 className="section-heading">Lore</h2>
