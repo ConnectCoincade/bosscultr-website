@@ -104,10 +104,10 @@ const Lore = () => {
     }}
   >
     {/* <img style={{ width: "100%" }} src="src\assets\lore-plx-img\boss.png" alt="foreground" /> */}
-    <picture>
+    {/* <picture> */}
   {/* <source media="(max-width:767px)" srcSet={ } alt="foreground"  /> */}
 <img  style={{ width: "100%" }} src={MobileBosses} alt="foreground"  />
-</picture>
+{/* </picture> */}
   </Plx>
 
 
