@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useRef} from 'react';
 import Navbar from '../navbar/Navbar';
 import Hero from '../hero/Hero';
-import Hero2 from '../hero/hero2';
+// import Hero2 from '../hero/hero2';
 import Lore from '../lore/lore1';
 import About from '../about/About';
-import Teaser from '../teaser/Teaser';
+import Teaser from '../teaser/teaser';
 import Roadmap from '../roadmap/Roadmap';
 import Faqs from '../faq/Faqs';
 import Footer from '../../container/Footer/Footer'
@@ -100,7 +100,7 @@ const Home = () => {
           </div>
           </section> */}
           <section ref={lore}>
-          {/* <Lore /> */}
+          <Lore />
           </section>
 
           <section>

@@ -20,37 +20,37 @@ const About = () => {
 
     const handleScroll = () => {
 
-      console.log('items->', items);
+      // console.log('items->', items);
         let ele1 = document.getElementById('boss-1')
         let ele2 = document.getElementById('boss-2')
         let ele3 = document.getElementById('boss-3')
 
         if(isMobile) {
           if(isInViewport(ele1)) {
-            console.log('In view port if->', ele1.id);
+            // console.log('In view port if->', ele1.id);
             ele1.src = items[0].urlOnHover
           }
           else {
             ele1.src = items[0].url
-            console.log('In view port ele->', ele1.id);
+            // console.log('In view port ele->', ele1.id);
           }
   
           if(isInViewport(ele2)) {
-            console.log('In view port if->', ele2.id);
+            // console.log('In view port if->', ele2.id);
             ele2.src = items[1].urlOnHover
           }
           else {
             ele2.src = items[1].url
-            console.log('In view port ele->', ele2.id);
+            // console.log('In view port ele->', ele2.id);
           }
   
           if(isInViewport(ele3)) {
-            console.log('In view port if->', ele3.id);
+            // console.log('In view port if->', ele3.id);
             ele3.src = items[2].urlOnHover
           }
           else {
             ele3.src = items[2].url
-            console.log('In view port ele->', ele3.id);
+            // console.log('In view port ele->', ele3.id);
           }
         }
         

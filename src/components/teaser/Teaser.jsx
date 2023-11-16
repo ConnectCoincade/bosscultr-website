@@ -87,38 +87,6 @@ const Teaser = () => {
 
 
   // Render the video source based on the isMobile state
-
-  useEffect(() => {
-    // Create an intersection observer
-    const observer = new IntersectionObserver(
-      (entries) => {
-        // The callback will be called for each entry in the viewport
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            // Video is in the viewport
-            setIsVisible(true);
-            isMute.current = false;
-            videoRef.current.play();
-          } else {
-            // Video is out of the viewport
-            setIsVisible(false);
-            isMute.current = true;
-            videoRef.current.pause();
-          }
-        });
-      },
-      { threshold: 0.5 } // Adjust the threshold as needed
-    );
-
-    // Start observing the video element
-    observer.observe(videoRef.current);
-
-    // Cleanup when the component is unmounted
-    return () => {
-      observer.disconnect();
-    };
-  }, []); // Empty dependency array to run the effect only once
-
   const videoSource = isMobile ? bossManMobileV1 : bossManV1;
 
   return (

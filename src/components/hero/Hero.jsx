@@ -4,7 +4,7 @@ import './hero.css'
 const Hero = () => {
   const {bossManV1,bossManMobileV1} = mediaDataObj;
   const videoRef = useRef(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
   const [isVisible, setIsVisible] = useState(true);
   const [muteMode, setMuteMode] = useState(
     () => JSON.parse(sessionStorage.getItem("isMute")) ?? true
