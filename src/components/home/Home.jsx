@@ -100,7 +100,7 @@ const Home = () => {
           </div>
           </section> */}
           <section ref={lore}>
-          <Lore />
+          {/* <Lore /> */}
           </section>
 
           <section>
