@@ -5,7 +5,8 @@ import { cardItems } from "../../data/constant2";
 import './roadmap.css';
 import { Fade } from "react-awesome-reveal";
 import small_cards from '../../assets/small_cards.png'
-
+let storedItem = {}
+let cardBool = false
 
 
 const Card = ({ setSelect, item, key,open, setOpen, selectedCard,setSelectedCard}) => {
@@ -72,7 +73,8 @@ const Card = ({ setSelect, item, key,open, setOpen, selectedCard,setSelectedCard
   }, []);
 
   const handleCardClick = (selectedCard) => {
-    // console.log(selectedCard);
+    storedItem = selectedCard
+    console.log('selectedCard->',selectedCard);
    
     if(window.innerWidth <= 800 && !open) {
       document.getElementById('faq-section').classList.add("faq-top-margin");
@@ -218,13 +220,60 @@ export default function RoadmapList({ setSelect }) {
   //   </div>
   //   </div>
   // );
+
+  function tableClick() {
+    console.log('open->', open);
+    console.log('table->', storedItem);
+    let selectedCard = storedItem
+
+    if(open) {
+      const selectedIndex = cardItems.findIndex((item) => item.id === selectedCard.id);
+    if(!selectedCard.lock){
+      
+      const translateXValue = "0px";
+     
+      cardItems.forEach((item, index) => {
+        if (index !== selectedIndex) {
+          const card = document.getElementById(item.id);
+        
+          if (card && !open) {
+
+              if(isMobile){
+                card.style.display = "block";
+              }
+              // console.log("Here 1");
+              card.style.transform = `translateX(${translateXValue})`;
+              card.style.transition = "all 2s ease-out";
+              setTimeout(()=>{  
+                card.style.display = "none"
+              },100);
+              setOpen(true);
+            
+          }else{
+            // console.log("Here 2");
+            setTimeout(()=>{  
+              card.style.transform = `translateX(0%)`;
+              card.style.transition = "all 2s ease-out";
+              card.style.display = "block";
+            },200);
+            setOpen(false);
+          }
+        }
+      });
+         !open  ? setSelectedCard(item) : setSelectedCard(null);
+    }
+    }
+    
+    
+  }
+
   return (
     <div className="roadmaplist" >
         <h3 className='roadmap-heading text-center'>Roadmap</h3>
         <div className='h-16'></div>
     <div className='relative' onClick={()=>setOpen(!open)} >
 
-     <div className="hidden md:block" onClick={() => setSelectedCard(null)} > <img className='w-full' src={table} alt="table" /> </div>
+     <div className="hidden md:block" onClick={() => tableClick()} > <img className='w-full' src={table} alt="table" /> </div>
       
      <div className='sticky image-card flex justify-between flex-col md:flex-row md:absolute'>
         
