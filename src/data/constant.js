@@ -28,24 +28,25 @@ import cardBack7 from '../assets/3x/Asset7-back.png';
 import cardBackLock from '../assets/3x/Asset8-back-lock.png'
 import twitter from '../assets/twiter.png'
 import discord from '../assets/discord.png';
-import bossManV1 from '../assets/Desktop HD 2.mp4';
-import bossManMobileV1 from '../assets/Mobile HD 2.mp4';
-import BackgroundGif from '../assets/lore-plx-img/Background.gif';
-import bosses from '../assets/lore-plx-img/bosses.png';
-import Midground from '../assets/lore-plx-img/Midground.png';
-import MobileBackground from '../assets/lore-plx-img/Mobile_Background.gif';
-import MobileBosses from '../assets/lore-plx-img/Mobile_bosses.png';
-import MobileMidground from '../assets/lore-plx-img/Mobile_Midground.png';
-import BossManRacecadeTeaser from '../assets/BossMan x Racecade Teaser_2.mp4'
+// import bossManV1 from '../assets/Desktop HD 2.mp4';
+// import bossManMobileV1 from '../assets/Mobile HD 2.mp4';
+// import BackgroundGif from '../assets/lore-plx-img/Background.gif';
+// import bosses from '../assets/lore-plx-img/bosses.png';
+// import Midground from '../assets/lore-plx-img/Midground.png';
+// import MobileBackground from '../assets/lore-plx-img/Mobile_Background.gif';
+// import MobileBosses from '../assets/lore-plx-img/Mobile_bosses.png';
+// import MobileMidground from '../assets/lore-plx-img/Mobile_Midground.png';
+// import BossManRacecadeTeaser from '../assets/BossMan x Racecade Teaser_2.mp4'
+
 
 export const mediaDataObj = {
-    BackgroundGif,
-    bosses,
-    Midground,
-    MobileBackground,
-    MobileBosses,
-    MobileMidground,
-    BossManRacecadeTeaser,
+    BackgroundGif:'https://imgur.com/S2axVGT.gif',
+    bosses:'https://imgur.com/yE52IlL.png',
+    Midground:'https://imgur.com/HPusVlh.png',
+    MobileBackground:'https://imgur.com/RSn1IGU.gif',
+    MobileBosses:'https://imgur.com/UFUBzjS.png',
+    MobileMidground:'https://imgur.com/te9d0jZ.png',
+    BossManRacecadeTeaser:'https://imgur.com/Zlm3Ah8.mp4',
     BossPicture1,
     BossPicture2,
     BossPicture3,
@@ -54,20 +55,12 @@ export const mediaDataObj = {
     BossPictureHover3,
  
 
-    bossManV1,
-    bossManMobileV1,
-   
-   
-    table,
- 
-   
-
-  
-   
+    bossManV1:'https://imgur.com/GRjI3D3.mp4',
+    bossManMobileV1:'https://imgur.com/O85PxqK.mp4',
+    table, 
     Logo,
     logo,
     // bossManImg,
-
     closeButton,
     twitter,
     discord,
