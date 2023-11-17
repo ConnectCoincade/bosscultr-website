@@ -28,7 +28,7 @@ import cardBack7 from '../assets/3x/Asset7-back.png';
 import cardBackLock from '../assets/3x/Asset8-back-lock.png'
 import twitter from '../assets/twiter.png'
 import discord from '../assets/discord.png';
-// import bossManV1 from '../assets/Desktop HD 2.mp4';
+import bossManV1 from '../assets/Desktop HD 2.mp4';
 // import bossManMobileV1 from '../assets/Mobile HD 2.mp4';
 // import BackgroundGif from '../assets/lore-plx-img/Background.gif';
 // import bosses from '../assets/lore-plx-img/bosses.png';
@@ -55,7 +55,7 @@ export const mediaDataObj = {
     BossPictureHover3,
  
 
-    bossManV1:'https://imgur.com/GRjI3D3.mp4',
+    bossManV1,
     bossManMobileV1:'https://imgur.com/O85PxqK.mp4',
     table, 
     Logo,
