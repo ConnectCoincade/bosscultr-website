@@ -21,8 +21,8 @@ import cardForMobile from '../assets/3x/cardForMobile.png'
 export const items = [
     {
       id: 1,
-      url: ' https://imgur.com/eGvAtmh.png',
-      urlOnHover:'https://imgur.com/YHIl6g8.png',
+      url: ' https://imgur.com/uia2iGC.png',
+      urlOnHover:'https://imgur.com/nikj7zg.png',
       cardForMobile:cardForMobile,
       title:`Nova Starling (Blue Nomad Syndicate)`,
       description:`Visionary leader of the freedom-loving Nomad Syndicate. Drives the advanced "Quasar" customized to push the limits. Cares for members but hides a simmering rage at defeat. Relies on cunning and technical creativity to beat rivals.`,
@@ -31,8 +31,8 @@ export const items = [
     },
     {
       id: 2,
-      url: 'https://imgur.com/hUCBlt7.png',
-      urlOnHover:'https://imgur.com/1MOypWh.png',
+      url: 'https://imgur.com/7xCevqC.png',
+      urlOnHover:'https://imgur.com/rH8UZv8.png',
       title:`Blackheart Beaumont (Black Star Syndicate)`,
       description:`Enigmatic leader shrouded in darkness. Drives the stealthy "Voidrunner" equipped with forbidden weapons. Ruthless in pursuit of his goals yet shows hints of buried nobility. Trusts no one and relies on forbidden knowledge to prove supremacy.`,
       tags: ["Mountains", "Aesthetic", "Pretty", "Scenic", "Rugged"],
@@ -40,8 +40,8 @@ export const items = [
     },
     {
       id: 3,
-      url: 'https://imgur.com/ErPE8KM.png',
-      urlOnHover:'https://imgur.com/SaBUB4O.png',
+      url: 'https://imgur.com/mpNWtda.png',
+      urlOnHover:'https://imgur.com/A8GeS2d.png',
       title:`Velkor the Vicious (Red Star Syndicate)`,
       description:`Ruthless leader who will stop at nothing to achieve racing domination. Drives the menacing "Red Rocket" armed with devastating weapons and speed boosters. Rules through intimidation yet inspires loyalty from his inner circle. Winning is all that matters, no matter the cost.`,
       tags: ["Mountains", "Aesthetic", "Pretty", "Scenic", "Rugged"],
