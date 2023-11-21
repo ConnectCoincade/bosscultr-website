@@ -1,39 +1,65 @@
 import React, {useState, useEffect, useRef} from 'react';
 import Navbar from '../navbar/Navbar';
 import Hero from '../hero/Hero';
-// import Hero2 from '../hero/hero2';
+import Hero2 from '../hero/hero2';
 import Lore from '../lore/lore1';
 import About from '../about/About';
-import Teaser from '../teaser/Teaser';
+import Teaser from '../teaser/teaser';
 import Roadmap from '../roadmap/Roadmap';
 import Faqs from '../faq/Faqs';
 import Footer from '../../container/Footer/Footer'
 import AnimatedCursor from "react-animated-cursor";
-import Loader from '../../container/Loader/Loader';
+import Loader from '../../components/preloader/preloader';
+// import { Lines } from 'react-preloaders';
 import '../home/home.css'
 const Home = () => {
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
+  const [allMediaLoaded, setAllMediaLoaded] = useState(false);
   const [refData, setRefData] = useState('')
+  const [isTab, setIsTab] = useState(window.innerWidth >= 800);
 
   const hero = useRef(null);
   const lore = useRef(null);
   const about = useRef(null);
   const roadmap = useRef(null);
   const faqs = useRef(null);
+  
 
   const handleSkip = () => {
-    setLoading(false);
+    // setLoading(false);
     // console.log("skipp");
   };
 
+  // useEffect(() => {
+   
+    // setTimeout(() => {
+      
+    //   }, 2000);
+      // setLoading(!loading);
+
+  // }, [loading]);
+
   useEffect(() => {
-    if (loading) {
-      setTimeout(() => {
-      // setLoading(false);
-        handleSkip();
-      }, 10000);
-    }
-  }, [loading]);
+    const myElement = document.documentElement
+    // myElement.style.overflow = 'hidden';
+
+    const handleLoad = () => {
+      // Your code to run once after all content is loaded
+      console.log('All content is loaded.');
+      setAllMediaLoaded(true)
+      myElement.style.overflow = '';
+    };
+
+    // Attach the load event listener to the window
+    window.addEventListener('load', handleLoad);
+
+    // Cleanup: remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+  }, [setAllMediaLoaded]);
+
+
 
   const scrollToSection = (sectionName) => {
   // Determine the corresponding ref based on the sectionName
@@ -42,6 +68,7 @@ const Home = () => {
   switch (sectionName) {
     case "hero":
       sectionRef = hero;
+      break;
       // console.log("hero");
     case "lore":
       sectionRef = lore;
@@ -79,33 +106,21 @@ const Home = () => {
         innerScale={0.5}
         outerScale={5}
       />
-      {loading ? (
-        <>
-          <Loader />
-          <div className="skippdiv">
-            <button onClick={handleSkip}>Skip</button>
-          </div>
-        </>
-      ) : (<>
+      <>
         <Navbar scrollToSection={scrollToSection} />
-
+          {/* {!allMediaLoaded && <Loader/>} */}
           <section ref={hero} >
            <Hero  /> 
-          {/* <Hero2 /> */}
+           
           </section>
-          {/* This is a comment */}
-          {/* <section>
-          <div className="lore-section">
-            <h2 className="section-heading">Lore</h2>
-          </div>
-          </section> */}
+          
           <section ref={lore}>
           <Lore />
           </section>
-
-          <section>
-          <Teaser />
-          </section>
+          {
+            isTab ? '': <section><Teaser /></section>
+          }
+          
 
           <section ref={about}>
             <About />
@@ -119,7 +134,8 @@ const Home = () => {
             <Faqs />
           </section>
         <Footer/>
-        </> )}
+        </> 
+      
     </>
   )
 }

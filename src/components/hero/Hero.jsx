@@ -4,7 +4,8 @@ import './hero.css'
 const Hero = () => {
   const {bossManV1,bossManMobileV1} = mediaDataObj;
   const videoRef = useRef(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
+
   const [isVisible, setIsVisible] = useState(true);
   const [muteMode, setMuteMode] = useState(
     () => JSON.parse(sessionStorage.getItem("isMute")) ?? true
@@ -25,6 +26,7 @@ const Hero = () => {
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 767);
+  
     };
 
     window.addEventListener("resize", handleResize);
@@ -36,6 +38,8 @@ const Hero = () => {
 
   // Render the video source based on the isMobile state
   const videoSource = isMobile ? bossManMobileV1 : bossManV1;
+ 
+
 
   return (
     <>
@@ -54,6 +58,7 @@ const Hero = () => {
          className='boss-div'
          >
       <source  src={videoSource} type="video/mp4" /> 
+    
      </video>
      </div>   
     </div>

@@ -10,6 +10,7 @@
   height: 100vh;
 }
 
+
 .lore-heading{
   font-family: Agency B;
   font-size: 60px;
@@ -20,15 +21,4 @@
   color: #f74f58;
   margin-left:100px ;
 }
-/* 
-@media screen and (min-width: 360px) and (max-width: 576px) { 
-  .mobile-bosses{
-    width: 76%;
-  }
-  .mobile-background{
-      width: 76%;
-  }
-  .mobile-midground{
-    width: 76%;
-  }
-} */
+

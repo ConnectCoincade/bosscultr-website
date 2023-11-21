@@ -23,6 +23,7 @@
   #boss-char {
     z-index: 1;
     margin-top: 500px;
+    
   }
 
   .scroll-boss {
@@ -35,6 +36,7 @@
 
   #vid-boss {
     position: fixed;
+  
   }
   
   .box-top {

@@ -4,7 +4,7 @@ import Plx from "react-plx";
 
 const Lore = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
-
+  
   const {Midground,bosses,BackgroundGif,MobileBackground,MobileBosses,MobileMidground} = mediaDataObj
 
   return (

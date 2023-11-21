@@ -87,29 +87,33 @@ const Lore = () => {
 
   return (
     <>
-   
+    <div className="">
+    <h2 className='text-center font-agency sm:text-[60px] text-[1.5rem] uppercase text-[#f74f58] font-extrabold'>Lore</h2>
+          </div>
     {isMobile ? 
     <div className='plx-container'>
           
       <Plx
-      className="mobile-bosses"
     parallaxData={[plxData1]}
     style={{
       position: "absolute",
       left: 0,
+      // top: "200vh",
+      // bottom: "100vh",
       top: "100vh",
-      // width: "100%",
+      width: "100%",
       zIndex: 100
     }}
   >
-   
+    {/* <img style={{ width: "100%" }} src="src\assets\lore-plx-img\boss.png" alt="foreground" /> */}
+    <picture>
+  {/* <source media="(max-width:767px)" srcSet={ } alt="foreground"  /> */}
 <img  style={{ width: "100%" }} src={MobileBosses} alt="foreground"  />
-
+</picture>
   </Plx>
 
 
   <Plx
-    className="mobile-background"
     parallaxData={[
       {
         start: 0,
@@ -134,19 +138,22 @@ const Lore = () => {
     style={{  
       position: "absolute",
       left: 1,
+      // top: "200vh",
+      // bottom: "100vh",
       top: "100vh",
-      // width: "100%"
+      width: "100%"
     }}
   >
-
+    {/* <img style={{ width: "100%" }} src="src\assets\lore-plx-img\Background.gif" alt="background" /> */}
+    <picture>
+  {/* <source media="(max-width:767px)" style={{ width: "100%" }} srcSet={ } alt="background" /> */}
 <img  style={{ width: "100%" }} src={MobileBackground} alt="background"  />
-
+</picture>
   </Plx>
 
 
   
   <Plx
-  className="mobile-midground"
     parallaxData={[
       {
         start: 0,
@@ -168,17 +175,27 @@ const Lore = () => {
     style={{
       position: "absolute",
       left: 0,
+      // ttop: "200vh",
+      // bottom: "200vh",
       top: "100vh",
-      // width: "100%"
+      width: "100%"
     }}
   >
-    
+    {/* <img
+      style={{
+        width: "100vw"
+      }}
+      src="src\assets\lore-plx-img\Midground.png"
+      alt="Goonies"
+    /> */}
+    <picture>
+  {/* <source media="(max-width:767px)" srcSet={ } alt="Goonies" /> */}
 <img  style={{
         width: "100vw"
       }}
       src={MobileMidground}
       alt="Goonies"/>
-
+</picture>
   </Plx>
   
   </div>
@@ -192,14 +209,17 @@ const Lore = () => {
               position: "absolute",
               left: 0,
               top: "100vh",
+              // bottom: "200vh",
               width: "100%",
               zIndex: 100
             }}
           >
-           
+            {/* <img style={{ width: "100%" }} src="src\assets\lore-plx-img\boss.png" alt="foreground" /> */}
+            <picture>
+          {/* <source media="(max-width:767px)" srcSet={MobileBosses } alt="foreground"  /> */}
           
         <img  style={{ width: "100%" }} src={bosses} alt="foreground"  />
-
+        </picture>
           </Plx>
 
 
@@ -229,12 +249,15 @@ const Lore = () => {
               position: "absolute",
               left: 1,
               top: "100vh",
+              // bottom: "100vh",
               width: "100%"
             }}
           >
-           
+            {/* <img style={{ width: "100%" }} src="src\assets\lore-plx-img\Background.gif" alt="background" /> */}
+            <picture>
+          {/* <source media="(max-width:767px)" style={{ width: "100%" }} srcSet={MobileBackground } alt="background" /> */}
         <img  style={{ width: "100%" }} src={BackgroundGif} alt="background"  />
-        
+        </picture>
           </Plx>
 
 
@@ -262,16 +285,25 @@ const Lore = () => {
               position: "absolute",
               left: 0,
               top: "100vh",
+              // bottom: "100vh",
               width: "100%"
             }}
           >
-           
+            {/* <img
+              style={{
+                width: "100vw"
+              }}
+              src="src\assets\lore-plx-img\Midground.png"
+              alt="Goonies"
+            /> */}
+            <picture>
+          {/* <source media="(max-width:767px)" srcSet={Midground } alt="Goonies" /> */}
         <img  style={{
                 width: "100vw"
               }}
               src={Midground}
               alt="Goonies"/>
-        
+        </picture>
           </Plx>
               
           

@@ -1,0 +1,81 @@
+/* #spinner {
+	display: block;
+	width: 200px;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+} */
+#loader-home {
+    z-index: 1000;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: #000;
+}
+#loader-heading {
+  text-align: center;
+  margin-top: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    /* margin-right: 100px; */
+    color: #f74f58;
+    font-family: Agency B;
+    /* border-bottom: 1px solid #f74f58; */
+}
+
+
+@keyframes loader {
+    50% {
+      filter: blur(5px);
+      transform: translateY(-10px);
+      opacity: 0.3;
+    }
+  }
+  
+  body {
+    background-color: #222;
+  }
+  
+  .loader {
+    width: 100px;
+    height: 15px;
+    margin: -7px auto 0 auto;
+    position: relative;
+    top: 8vh;
+  }
+  
+  .loader > div {
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    float: left;
+    margin: 0 5px 0 0;
+    animation: loader 0.7s infinite;
+    opacity: 0.5;
+    border-radius: 10%;
+  }
+  
+  .loader > div:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .loader > div:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .loader > div:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .loader > div:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  
+  .loader > div:nth-child(5) {
+    animation-delay: 0.5s;
+  }
