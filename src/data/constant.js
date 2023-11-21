@@ -40,11 +40,11 @@ import bossManV1 from '../assets/Desktop HD 2.mp4';
 
 
 export const mediaDataObj = {
-    BackgroundGif:'https://imgur.com/S2axVGT.gif',
-    bosses:'https://imgur.com/yE52IlL.png',
+    BackgroundGif:'https://imgur.com/r6uD8x1.png', 
+    bosses:'https://imgur.com/Pe6gAKa.png',
     Midground:'https://imgur.com/HPusVlh.png',
-    MobileBackground:'https://imgur.com/RSn1IGU.gif',
-    MobileBosses:'https://imgur.com/UFUBzjS.png',
+    MobileBackground:'https://imgur.com/AuII74s.gif',
+    MobileBosses:'https://imgur.com/XNuNDrf.png',
     MobileMidground:'https://imgur.com/te9d0jZ.png',
     BossManRacecadeTeaser:'https://imgur.com/Zlm3Ah8.mp4',
     BossPicture1,
