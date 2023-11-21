@@ -41,22 +41,38 @@ const Home = () => {
 
   useEffect(() => {
     const myElement = document.documentElement
-    // myElement.style.overflow = 'hidden';
+    myElement.style.overflow = 'hidden';
 
-    const handleLoad = () => {
-      // Your code to run once after all content is loaded
-      console.log('All content is loaded.');
-      setAllMediaLoaded(true)
-      myElement.style.overflow = '';
+    // const handleLoad = () => {
+    //   console.log('All content is loaded.');
+    //   setAllMediaLoaded(true)
+    //   myElement.style.overflow = '';
+    // };
+
+    // window.addEventListener('load', handleLoad);
+
+    // return () => {
+    //   window.removeEventListener('load', handleLoad);
+    // };
+
+    const onPageLoad = () => {
+      setTimeout(() => {
+        setAllMediaLoaded(true)
+        myElement.style.overflow = '';
+      }, 3000);
+      
+      // do something else
     };
+  
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad, false);
+      return () => window.removeEventListener('load', onPageLoad);
+    }
 
-    // Attach the load event listener to the window
-    window.addEventListener('load', handleLoad);
 
-    // Cleanup: remove the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('load', handleLoad);
-    };
+    
   }, [setAllMediaLoaded]);
 
 
@@ -108,7 +124,7 @@ const Home = () => {
       />
       <>
         <Navbar scrollToSection={scrollToSection} />
-          {/* {!allMediaLoaded && <Loader/>} */}
+          {!allMediaLoaded && <Loader/>}
           <section ref={hero} >
            <Hero  /> 
            
