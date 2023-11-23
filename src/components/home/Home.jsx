@@ -16,7 +16,7 @@ const Home = () => {
   // const [loading, setLoading] = useState(false);
   const [allMediaLoaded, setAllMediaLoaded] = useState(false);
   const [refData, setRefData] = useState('')
-  const [isTab, setIsTab] = useState(window.innerWidth >= 800);
+  const [isTab, setIsTab] = useState(window.innerWidth <= 800);
 
   const hero = useRef(null);
   const lore = useRef(null);
