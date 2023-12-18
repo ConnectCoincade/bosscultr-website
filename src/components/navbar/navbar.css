@@ -8,8 +8,11 @@ ion-icon {
   .nav-ul{
     font-family: Agency B;
   }
-  @media only screen and (max-width:768px){
+  @media only screen and (max-width:788px){
     .nav-ul{
       background-color: black;
+      /* background-color: transparent; */
     }
+
+ 
   }

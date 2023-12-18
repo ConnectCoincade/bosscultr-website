@@ -6,4 +6,8 @@
     font-family: Agency R;
     src: url("../src/assets/AGENCYR.TTF");
   }
+  @font-face {
+    font-family: Brushsc I;
+    src: url('../src/assets/BRUSHSCI.TTF');
+  }
   
