@@ -104,7 +104,7 @@ const Teaser = () => {
          playsInline={true}
          disablePictureInPicture={true}
          controls={true}
-         className='boss-div'
+         className='boss-div w-screen'
          >
       <source  src={BossManRacecadeTeaser} type="video/mp4" /> 
      </video>
