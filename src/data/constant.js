@@ -79,8 +79,8 @@ export const mediaDataObj = {
     faqs: [
            {
             id:1,
-            que :"What is Bosscultr?",
-            htmlContent:`<p>Bosscultr is a premium gaming NFT collection by Coincade Studios (add hyperlink) focused on exclusive membership and gaming airdrops and exclusive perks powered by NFTs on Ethereum Blockchain. <br/><br/>
+            que :"What is BossCultr?",
+            htmlContent:`<p>BossCultr is a premium gaming NFT collection by Coincade Studios (add hyperlink) focused on exclusive membership and gaming airdrops and exclusive perks powered by NFTs on Ethereum Blockchain. <br/><br/>
             Launching with 3 months of quality first content, the NFT collection becomes the core for Coincade’s upcoming games RaceCade and Ace Of Cades.
              <br/><br/>What is the utility of the BossCultr NFTs?<br/><br/>
              <ul class="unorderList" style="padding-left:30px;">
@@ -96,16 +96,16 @@ export const mediaDataObj = {
               `         
             },
            {id:2,
-            que:"What is the roadmap for Bosscultr?",
+            que:"What is the roadmap for BossCultr?",
            htmlContent:`Our vision for BossCultr is to make it a media platform across gaming, digital content and artwork. Divided into multiple seasons. Season 1 will be starting on the day of the mint, with the game launch of our casual racing game: RaceCade.<br/><br/>
            Season 2 will begin soon after. We will engage with our community of Bossman throughout the process in order to make sure our ambitions match those of our holders.<br/><br/>
-           Our intent is to turn Bosscultr into a company bridging the digital and physical worlds and develop into a fully-fledged brand & license.
+           Our intent is to turn BossCultr into a company bridging the digital and physical worlds and develop into a fully-fledged brand & license.
            `},
            {
             id:3,
             que:"What are the Syndicates?",
            htmlContent:`
-            <p> In the thrilling world of Bosscultr, three powerful syndicates rule the retro racing domain, each with its own distinct identity and goals.</p>
+            <p> In the thrilling world of BossCultr, three powerful syndicates rule the retro racing domain, each with its own distinct identity and goals.</p>
             <br/>
             <ol class="orderList" style="padding-left:30px;">
              <li class="list-b">
@@ -127,15 +127,15 @@ export const mediaDataObj = {
 
            {id:5,
             que:"Where can I follow for updates?",
-           htmlContent:"Bosscultr will be mostly active on Twitter and Discord, but will soon be available on Instagram and YouTube."},
+           htmlContent:"BossCultr will be mostly active on Twitter and Discord, but will soon be available on Instagram and YouTube."},
 
            {id:6,
             que:"What is the minting process and price?",
-            htmlContent:"0.X ETH (Prices to be announced on the 2nd week of November).<br>The official mint will take place on bosscultr.com"},
+            htmlContent:"0.X ETH (Prices to be announced on the 2nd week of November).<br>The official mint will take place on BossCultr.com"},
 
            {id:7,
             que:`What is an "OG Member"?`,
-           htmlContent:"A OG Member is only available for the Bosscultr team and Early loyal members of the Bosscultr Fam. An OG member will get an airdrop of the official Boss Man NFT at the time of MINT, And exclusive access to the Bossman Inner Circle Communities."},
+           htmlContent:"A OG Member is only available for the BossCultr team and Early loyal members of the BossCultr Fam. An OG member will get an airdrop of the official Boss Man NFT at the time of MINT, And exclusive access to the Bossman Inner Circle Communities."},
 
            {id:8,
             que:"How to become an “OG” Member?",
@@ -145,13 +145,13 @@ export const mediaDataObj = {
 
            {id:9,
             que:"What will be the secondary markets?", 
-           htmlContent:"After mint, the Bosscultr NFTs will be available on OpenSea and LooksRare, as well as NFT listing platforms that support the Eth Blockchain. NFT Holders are also allowed to list the NFT on 3rd party platforms."},
+           htmlContent:"After mint, the BossCultr NFTs will be available on OpenSea and LooksRare, as well as NFT listing platforms that support the Eth Blockchain. NFT Holders are also allowed to list the NFT on 3rd party platforms."},
            
            {
             id:10,
             que:`How can I get a "WhiteList"?`,
             htmlContent:`At the moment, the only "WhiteList" spots being given are through partnerships with other projects and Giveaways.<br/>
-            Whatever happens we will recognize the people who are really interested in Bosscultr. If you’d like to connect and grow with us write to us @ connect@coincade.io
+            Whatever happens we will recognize the people who are really interested in BossCultr. If you’d like to connect and grow with us write to us @ connect@coincade.io
             `}
            
         ],
