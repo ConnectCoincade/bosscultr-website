@@ -81,7 +81,7 @@ function Mint() {
       <span className='titlec'>
         <h2>By Coincade Studios</h2>
       </span>
-      <span className='para'>
+      <span className='paraa'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero autem laudantium magnam voluptatem labore, error
         facilis. Fugit excepturi delectus totam nihil nisi quae, facilis repellendus, explicabo ducimus aliquam dolores
         nemo?
