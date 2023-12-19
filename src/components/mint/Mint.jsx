@@ -77,10 +77,12 @@ function Mint() {
           style={{ opacity, transition: 'opacity 0.5s ease-in-out' }}
         />
       </Fade>
+      <div className= 'cointainer'>
       <img src={BossMan} alt='Right image' className='right-image' />
       <span className='titlec'>
         <h2>By Coincade Studios</h2>
       </span>
+      </div>
       <span className='para'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero autem laudantium magnam voluptatem labore, error
         facilis. Fugit excepturi delectus totam nihil nisi quae, facilis repellendus, explicabo ducimus aliquam dolores

@@ -10,8 +10,11 @@ const Navbar = (props) => {
   const [open, setOpen] = useState(false);
   const { scrollY } = useScroll();
 
+
+
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
+    // console.log(previous,"<-previous",latest,"<-latest");
     if (latest > previous && latest > 150) {
       setHidden(true);
     } else {
@@ -27,7 +30,7 @@ const Navbar = (props) => {
   };
 
   const closeMobileMenu = () => {
-    setOpen(false); // This function will close the mobile menu
+    setOpen(false); // This function will close the mobile men
   };
 
   
@@ -56,7 +59,9 @@ const Navbar = (props) => {
         />
       </div>
 
-      <div
+  
+
+       <div
         onClick={() => setOpen(!open)}
         className="text-3xl absolute right-8 top-2 cursor-pointer md:hidden"
       >
@@ -67,7 +72,8 @@ const Navbar = (props) => {
         className={`nav-ul md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
           open  ? 'top-0 ' : 'top-[-490px]'
         }`}
-      >
+      > 
+
         {Links.map((link) => (
           <li
             key={link.name} // Make sure to add a unique key for each list item
