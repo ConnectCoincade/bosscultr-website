@@ -46,7 +46,7 @@ export const mediaDataObj = {
     MobileBackground:'https://imgur.com/AuII74s.gif',
     MobileBosses:'https://imgur.com/XNuNDrf.png',
     MobileMidground:'https://imgur.com/te9d0jZ.png',
-    BossManRacecadeTeaser:'https://imgur.com/Zlm3Ah8.mp4',
+    BossManRacecadeTeaser:' https://i.imgur.com/6v6v5os.mp4',
     BossPicture1,
     BossPicture2,
     BossPicture3,
